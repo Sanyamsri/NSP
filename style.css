@@ -1,0 +1,147 @@
+.nav {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 5px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+.nav div {
+  min-width: fit-content;
+  padding: 10px;
+  color: #0f2042;
+  font-weight: bolder;
+  font-size: 27px;
+}
+.nav .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .buttons button {
+  border: 0px;
+  background-color: aliceblue;
+  height: 40px;
+  padding: 20px;
+  font-size: large;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+.nav .buttons button:hover {
+  transition-delay: 50ms;
+  transition-property: background-color, color;
+  background-color: #0f2042;
+  color: azure;
+  cursor: pointer;
+}
+.nav .buttons button i {
+  margin-right: 5px;
+}
+
+.catalogue {
+  background-color: #0f2042;
+}
+
+.container {
+  position: relative;
+  background-color: #0f2042;
+  display: flex;
+  gap: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0px auto;
+  width: 900px;
+}
+.controls {
+  position: sticky;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+.prev {
+  top: 170px;
+  left: 0px;
+}
+.next {
+  top: 170px;
+  right: -30px;
+}
+
+.items {
+  background-color: #8c99b3;
+  border-radius: 20px;
+}
+
+.catalogue .items {
+  height: 300px;
+  min-width: 200px;
+}
+.catalogue .items:hover {
+  box-shadow: 0px -2px 20px 2px rgb(255, 255, 255);
+}
+
+.subOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 255px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 2;
+  height: 80px;
+}
+.subOptions .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.subOptions .buttons button {
+  background-color: white;
+  font-family: sans-serif;
+  border: 0px;
+  height: 40px;
+  padding: 20px;
+  font-size: medium;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border-bottom: 0.2rem solid white;
+}
+.subOptions .buttons button:hover {
+  cursor: pointer;
+  border-bottom: 0.2rem solid #0f2042;
+}
+.subOptions div {
+  font-weight: 100;
+  font-size: 27px;
+  font-size: x-large;
+}
+.menu {
+  background-color: #0f2042;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 30px 15px;
+  justify-content: space-evenly;
+  margin: 0px 250px;
+  align-items: center;
+}
+
+.menu .card {
+  height: 340px;
+  background-color: #cacbcd;
+  border-radius: 40px;
+  border: solid 10px #0f2042;
+}
+.menu .card:hover {
+  height: 360px;
+  box-shadow: 0px -2px 20px 2px rgb(255, 255, 255);
+  border: 0px #0f2042;
+}
