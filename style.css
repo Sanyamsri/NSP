@@ -45,32 +45,33 @@
 
 .catalogue {
   background-color: #0f2042;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  position: relative;
   background-color: #0f2042;
   display: flex;
   gap: 30px;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin: 0px auto;
   width: 900px;
+  scroll-behavior: smooth;
 }
 .controls {
-  position: sticky;
   height: 60px;
-  width: 60px;
+  min-width: 60px;
   border-radius: 50%;
   font-size: 24px;
 }
 .prev {
-  top: 170px;
-  left: 0px;
+  /* top: 130px;
+  left: 80px; */
 }
 .next {
-  top: 170px;
-  right: -30px;
+  /* top: 130px;
+  right: 90px; */
 }
 
 .items {
@@ -79,6 +80,8 @@
 }
 
 .catalogue .items {
+  transition: all 0.5s ease;
+  margin: 30px 0px;
   height: 300px;
   min-width: 200px;
 }
@@ -139,9 +142,24 @@
   background-color: #cacbcd;
   border-radius: 40px;
   border: solid 10px #0f2042;
+  display: flex;
+  align-items: end;
+  padding: 20px 5px;
 }
 .menu .card:hover {
   height: 360px;
   box-shadow: 0px -2px 20px 2px rgb(255, 255, 255);
   border: 0px #0f2042;
+}
+
+.menu .card span {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #0f2042;
+  width: 60px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 1em;
+  justify-content: center;
 }
